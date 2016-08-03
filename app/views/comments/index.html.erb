@@ -1,8 +1,5 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Comments</h1>
-
-<table>
+<table class="ui striped table">
   <thead>
     <tr>
       <th>User</th>
@@ -14,7 +11,7 @@
   <tbody>
     <% @comments.each do |comment| %>
       <tr>
-        <td><%= comment.user %></td>
+        <td><%= comment.user.email %></td>
         <td><%= comment.comment %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
@@ -25,5 +22,9 @@
 </table>
 
 <br>
+<div class="ui threaded comments">
+  <div id="haha">
+  </div>
+</div>
 
 <%= link_to 'New Comment', new_comment_path %>

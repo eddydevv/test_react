@@ -1,10 +1,11 @@
-<%= simple_form_for(@comment) do |f| %>
+<%= simple_form_for @comment, defaults: { input_html: { class: 'ui form' } } do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.association :user %>
-    <%= f.input :comment %>
+  <div class="ui form">
+    <%= f.association :user, input_html: { class: 'ui fluid dropdown' }, wrapper_html: { class: 'field' } %>
+    <%= f.input :comment, wrapper_html: { class: 'field' } %>
   </div>
+
 
   <div class="form-actions">
     <%= f.button :submit %>

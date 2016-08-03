@@ -1,8 +1,9 @@
-<nav class="ui secondary pointing menu">
+<nav class="ui pointing menu">
   <%= link_to 'Home', root_path, class: 'item' %>
   <%= link_to 'About', about_path, class: 'item' %>
+  <%= link_to 'Leave Comment', comments_path, class: 'item' %>
   <div class="right menu">
-    <div class="ui simple item dropdown">
+    <div class="ui item dropdown">
       User <i class="dropdown icon"></i>
       <div class="menu">
         <%= link_to 'LogIn', user_session_path, class: 'item' %>

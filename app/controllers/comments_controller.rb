@@ -5,6 +5,8 @@ class CommentsController < ApplicationController
   # GET /comments.json
   def index
     @comments = Comment.all
+
+    @page_header = "Comments"
   end
 
   # GET /comments/1

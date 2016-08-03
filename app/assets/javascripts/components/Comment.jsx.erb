@@ -1,0 +1,20 @@
+var Comment = React.createClass({
+  render: function() {
+    return (
+      <div className="comment">
+        <a className="avatar">
+          <%= image_tag 'toph.png', alt: 'facepic' %>
+        </a>
+        <div className="content">
+          <a className="author">Matt</a>
+          <div className="metadata">
+            <span className="date"><%= Date.today %></span>
+          </div>
+          <div className="text">
+            How artistic!
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
