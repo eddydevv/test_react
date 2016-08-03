@@ -13,6 +13,7 @@ gem 'react-rails'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'simple_form'
 gem 'geocoder'
+gem 'devise'
 
 
 group :development, :test do
