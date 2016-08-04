@@ -9,6 +9,4 @@
 
 $(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
-
-  ReactDOM.render(<Comment />, document.getElementById('haha'));
 })
