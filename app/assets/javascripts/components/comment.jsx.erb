@@ -6,7 +6,7 @@ var Comment = React.createClass({
           <%= image_tag 'toph.png', alt: 'facepic' %>
         </a>
         <div className="content">
-          <a className="author">Matt</a>
+          <a className="author">{this.props.user}</a>
           <div className="metadata">
             <span className="date"><%= Date.today %></span>
           </div>

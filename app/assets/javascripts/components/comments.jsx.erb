@@ -1,9 +1,18 @@
 var Comments = React.createClass({
+  getInitialState: function() {
+    return {
+      user: '',
+      comment: '',
+      created_at: null
+    };
+  },
+
   render: function() {
     return (
       <div className="ui comments">
         <h3 className="ui dividing header">Comments</h3>
-        <Comment />
+        console.log({this.state.comment});
+        <Comment user ={this.state.user} />
         <CommentField />
       </div>
     );
